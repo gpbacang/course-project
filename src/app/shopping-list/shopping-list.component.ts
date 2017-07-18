@@ -19,8 +19,7 @@ export class ShoppingListComponent implements OnInit {
   }
 
   onAddIngredient(ingredientData: Ingredient) {
-    var newIngredient = new Ingredient(ingredientData.name, ingredientData.amount);
-    this.ingredients.push(newIngredient);
+    this.ingredients.push(ingredientData);
   }
 
 }
